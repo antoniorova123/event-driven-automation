@@ -22,7 +22,7 @@
     - name: Run playbook to greet our webhook callers
       condition: event.webhookgreeting is defined
       action:
-        run_playbook:
+        run_job_template:
           name: eda-playbook-webhook.yml
 
     - name: Setup httpd container on defined hosts
@@ -35,5 +35,5 @@
     - name: Run playbook to setup httpd container
       condition: event.target_hosts is defined
       action:
-        run_playbook:
+        run_job_template:
           name: eda-playbook-httpd-container.yml
