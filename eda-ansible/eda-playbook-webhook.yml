@@ -1,6 +1,6 @@
 ---
 - name: Greeting playbook for webhook events
-  hosts: localhost
+  hosts: all
   tasks:
     - name: Debug message
       ansible.builtin.debug:
