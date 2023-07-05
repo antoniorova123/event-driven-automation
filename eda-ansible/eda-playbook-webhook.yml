@@ -2,9 +2,6 @@
 - name: Greeting playbook for webhook events
   hosts: all
   tasks:
-    - name: Debug message
-      ansible.builtin.debug:
-        msg: "{{ ansible_eda.event.webhookgreeting }}"
     - name: Nuevo Playbook
       ansible.builtin.debug:
         msg: "Desplegando maquina virtual"
