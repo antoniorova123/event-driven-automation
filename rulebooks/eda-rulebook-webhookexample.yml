@@ -20,6 +20,4 @@
       action:
         run_job_template:
           name: eda-playbook-webhook.yml
-          organization:
-             name: Default
-             type: organization
+          organization: Default
